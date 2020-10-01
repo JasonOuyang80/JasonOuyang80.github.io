@@ -1,0 +1,54 @@
+https://www.heropatterns.com/
+
+https://fonts.google.com/specimen/Play?sidebar.open=true&selection.family=Play
+
+https://pixy.org/4166963/  Warrior background
+
+
+https://unsplash.com/photos/Mf23RF8xArY -adventure 
+
+https://unsplash.com/photos/CiUR8zISX60 -acton
+
+https://unsplash.com/photos/X5goZpoIn7s -puzzle
+https://giphy.com/gifs/call-of-duty-modern-warfare-captain-price-d8i1XJjV2Ym53KK0Dn - action
+
+https://giphy.com/gifs/xbox-xbox-one-x-no-mans-sky-series-U4X7pa8dmJMJLiLAE0 - adventure
+https://giphy.com/gifs/betaworks-vRIMylt7bULaZVg9vb -puzzle
+
+https://giphy.com/gifs/roka-can-stardew-valley-harvest-moon-my-time-at-portia-2sgGxtBPdqbNipyd4O -simulation
+
+https://www.flaticon.com/free-icon/mouse_919014
+
+
+
+background: rgb(0,18,32);
+background: linear-gradient(90deg, rgba(0,18,32,1) 0%, rgba(75,101,107,1) 100%, rgba(148,166,165,1) 100%);
+
+
+
+
+
+
+    Menu Container
+    <div class="container fadein ">
+        <!-- Menu Card -->
+            <div class="card card-image-action">
+                <div class="card-title">Action</div>
+                <!-- <button class="card-button">Learn More</button> -->
+            </div>
+        <!-- Menu Card -->
+            <div class="card card-image-adventure">
+                <div class="card-title">Adventure</div>
+                <!-- <button class="card-button">Learn More</button> -->
+            </div>
+        <!-- Menu Card -->
+            <div class="card card-image-puzzle">
+                <div class="card-title">Puzzle</div>
+                <!-- <button class="card-button">Learn More</button> -->
+            </div>
+        <!-- Menu Card -->
+            <div class="card card-image-simulation">
+                <div class="card-title">Simulation</div>
+                <!-- <button class="card-button">Learn More</button> -->
+            </div>
+    </div>
