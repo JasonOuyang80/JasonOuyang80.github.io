@@ -17,8 +17,10 @@
     --box-shadow-1: 1px 1px 2px 3px rgb(3, 3, 3, 0.7);
     --box-shadow:  0 0.2rem 0.5rem;
     --box-shadow-1-2: 1px -1px 2px 3px rgb(3, 3, 3, 0.7);
-    --hero-shadow: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(18, 18, 18, 0.87) 82%);
-    --card-shadow-ocean-blue: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(44, 94, 143, 0.80) 82%);
+    --hero-shadow: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(18, 18, 18, 0.95) 51%);
+    --card-shadow-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(15, 14, 11, 0.8) 82%);
+    --card-shadow-pitch-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(0, 0, 0, 0.85) 52%);
+    --card-shadow-bright: linear-gradient(-179deg, rgba(10, 10, 10, 0.6) 6%, rgba(110, 109, 109, 0.7) 85%);
     --form-input-bg-color: #222222;
     --info-card-bg-color: #222222;
     
@@ -155,7 +157,6 @@ article {
 
 }
 .hero-shadow {
-    /* background: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(5, 14, 27, 0.87) 82%); */
     background: var(--hero-shadow);
     height: 100%;
     position: absolute;
@@ -311,7 +312,7 @@ article {
 }
 
 .container-full {
-    margin: 100px auto;
+    margin: 50px auto;
     width: 90vw;
 }
 .box-container {
@@ -376,41 +377,87 @@ article {
 
 /* Card in Container */
 .content-card {
+   
+}
+
+.card-bg-league {
+    background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
+    background-size: cover; 
+}
+
+.card-bg-cs_go {
+    background: url(../images/background/cs_go.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.card-bg-osrs {
+    background: url(../images/background/osrs.jpg) no-repeat center center; 
+    background-size: cover;
+}
+.one-third {
     width: 33.33333%;
+}
+
+.two-third {
+    width: 66.6666%;
+}
+
+.full {
+    width: 99.999%;
+}
+
+.one-half {
+    width: 49.9999%;
+}
+
+.tall {
+    min-height: 800px;
+}
+
+.short {
+    min-height: 550px;
+}
+
+.no-space {
+    margin: 0;
 }
 .info-card {
     display:none;
     background-color: var(--info-card-bg-color);
 }
 .card {
-    min-height: 650px;
+    height: 350px;
     margin: 10px;
     position: relative;
     background-color: var(--info-card-bg-color);
-    padding: 4.5rem;
     box-shadow: var(--box-shadow);
-
+    display: flex;
+    flex-direction: column;
 }
-.card-shadow-ocean-blue {
-    background: var(--card-shadow-ocean-blue);
+.card-shadow-dark {
+    background: var(--card-shadow-dark);
     height: 100%;
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 1rem;
+ 
 }
-.picture-card img{
-   display: block;
-   width: 100%;
-   height: auto;
+
+.card-shadow-pitch-dark {
+    background: var(--card-shadow-pitch-dark);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.picture-card {
-
-    position: relative;
-
-
-
+.card-shadow-bright{
+    background: var(--card-shadow-bright);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
 
 /* Animations */
 .fadein {
@@ -543,7 +590,7 @@ textarea {
     }
 
     .navlinks {
-        opacity: 0;
+        display: none;
     }
   
     #logo-title {
@@ -580,7 +627,6 @@ textarea {
 
     .content-card {
         width: 100%;
-      
     }
     .border-right-black {
         border: none;
@@ -650,8 +696,8 @@ textarea {
     padding: 0 0 5rem 4rem;
 }
 .card {
-    padding: 1rem;
-    min-height: 80vh;
+
+   height: 300px;
 }
 .content-card {
     margin-bottom: 5rem;
