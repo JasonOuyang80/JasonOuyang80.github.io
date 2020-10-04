@@ -347,6 +347,11 @@ article {
     white-space: 2px;
 }
 
+.content-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
 .col-both {
   
     width: 100%;
@@ -528,9 +533,11 @@ textarea {
 /* Media Query 1040px */
 @media (max-width: 1040px) {
     .hero-display p {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
-
+    article p {
+        font-size: 3rem;
+    }
     .display-1 {
         font-size: 4rem;
     }
@@ -558,12 +565,10 @@ textarea {
    article h2 {
        font-size: 4.5rem;
    }
-
-   article {
-
-       font-size: 2.5rem;
-       padding-bottom: 0;
+   .card {
+       height: 100vh;
    }
+  
     
     .container {
         flex-direction: column;
@@ -651,5 +656,11 @@ textarea {
 .content-card {
     margin-bottom: 5rem;
 }
+
+article p{
+    font-size: 2.5rem;
 }
+
+}
+
 
