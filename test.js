@@ -2,27 +2,30 @@ const mobileNav = document.getElementsByClassName('mobile-button');
 const elements = document.querySelectorAll('.hidden');
 const navLinks = document.getElementById('navlinks');
 const mobileClose = document.getElementById('mobile-close');
+const jsSlide = document.getElementsByClassName('js-slide');
+const article = document.getElementById('article')
 
-
-
-
+const colorPalette = ['#121212', '#3b3b3b', '#1f2933','#3c4f63'];
 
 
 const scrollDownHidden = ()=>{
-    const currentPos = window.scrollY;
-   
+  
+
+    for (let i = 0; i < jsSlide.length; i++){
+        currentElement=jsSlide[i];
+        if (Math.abs(jsSlide[i].getBoundingClientRect().top)<300){
+            article.style.backgroundColor = colorPalette[i];
     
-    elements.forEach((element) => {
-        const currentEle = element.getBoundingClientRect().top
-        if (currentPos >= currentEle) {
-            element.classList.add('fade-in-element');
-            element.classList.remove('hidden')
+            currentElement.classList.add('fadein');
+            currentElement.classList.remove('hidden');
         }
         else {
-            element.classList.add('hidden');
-            element.classList.remove('fade-in-element')
+          
+            currentElement.classList.add('hidden');
+            currentElement.classList.remove('fadein');
         }
-    });
+    }   
+    
 }
 
 const showSideBar = () => {
