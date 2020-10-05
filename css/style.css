@@ -19,8 +19,12 @@
     --box-shadow-1-2: 1px -1px 2px 3px rgb(3, 3, 3, 0.7);
     --hero-shadow: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(18, 18, 18, 0.95) 51%);
     --card-shadow-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(15, 14, 11, 0.8) 82%);
-    --card-shadow-pitch-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(0, 0, 0, 0.85) 52%);
-    --card-shadow-bright: linear-gradient(-179deg, rgba(10, 10, 10, 0.6) 6%, rgba(110, 109, 109, 0.7) 85%);
+    --card-shadow-pitch-dark-1:  linear-gradient(-179deg, rgba(23, 23, 23, 0) 29%, rgba(15, 14, 11, 0.85) 82%);
+
+    --card-shadow-pitch-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(0, 0, 0, 0.65) 52%);
+
+
+    --card-shadow-bright: linear-gradient(-179deg, rgba(10, 10, 10, 0.6) 6%, rgba(242, 242, 242, 0.20) 55%);
     --form-input-bg-color: #222222;
     --info-card-bg-color: #222222;
     
@@ -246,7 +250,7 @@ article {
 
 #navlinks li a:hover {
   
-   
+    filter: brightness(1.2);
     transition: ease-in-out 0.2s;
   
 }
@@ -374,26 +378,6 @@ article {
 
 }
 
-
-/* Card in Container */
-.content-card {
-   
-}
-
-.card-bg-league {
-    background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
-    background-size: cover; 
-}
-
-.card-bg-cs_go {
-    background: url(../images/background/cs_go.jpg) no-repeat center center; 
-    background-size: cover;
-}
-
-.card-bg-osrs {
-    background: url(../images/background/osrs.jpg) no-repeat center center; 
-    background-size: cover;
-}
 .one-third {
     width: 33.33333%;
 }
@@ -415,36 +399,93 @@ article {
 }
 
 .short {
-    min-height: 550px;
+    min-height: 500px;
 }
 
 .no-space {
     margin: 0;
 }
+
+/* Card in Container */
+
+
+.card-bg-league {
+    background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
+    background-size: cover; 
+}
+
+.card-bg-cs_go {
+    background: url(../images/background/cs_go.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.card-bg-osrs {
+    background: url(../images/background/osrs.jpg) no-repeat center center; 
+    background-size: cover;
+}
+.card-bg-blade_and_soul {
+    background: url(../images/background/blade_dancer_02_wide_2880x1800.jpg) no-repeat center;
+    background-size: cover;
+}
+.card-bg-dfo {
+    background: url(../images/background/dfo.jpg) no-repeat center; 
+    background-size: cover;
+}
+
+.card-img {
+  width: 80%;
+  height: auto;
+}
+
+.card-img-large {
+    width: 55%;
+    height: auto;
+}
+
+.card-logo {
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .info-card {
     display:none;
     background-color: var(--info-card-bg-color);
 }
 .card {
-    height: 350px;
+    
     margin: 10px;
     position: relative;
     background-color: var(--info-card-bg-color);
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
+ 
 }
+
+/* Shadows */
 .card-shadow-dark {
     background: var(--card-shadow-dark);
     height: 100%;
     position: absolute;
     bottom: 0;
     width: 100%;
- 
 }
 
 .card-shadow-pitch-dark {
     background: var(--card-shadow-pitch-dark);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-shadow-pitch-dark-1 {
+    background: var(--card-shadow-pitch-dark-1);
     height: 100%;
     position: absolute;
     bottom: 0;
@@ -456,6 +497,20 @@ article {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.card:hover {
+    transform: scale(1.02);
+    z-index: 998;
+    transition: ease-out 0.2s;
+}
+
+.card:hover div:first-child {
+    display: none;
+
+}
+.card:hover div:not(:first-child) {
+    display: flex;
+    animation: fadein 1s;
 }
 
 
@@ -606,7 +661,7 @@ textarea {
         padding: 0 20px;
     }   
     .hero-display img {
-        height: 450px;
+        height: 350px;
     }
     
    article h2 {
