@@ -541,8 +541,26 @@ article {
     animation: fadeinout 1.5s;
     opacity: 0;
 }   
+/* Color Palette */
+.color-0 {
+  
+    background: #121212;
+    transition: background 1s linear;
+}
+.color-1 {
+    background: #3b3b3b;
+    transition: background 1s linear;
 
+}
 
+.color-2 {
+    background: #1f2933;
+    transition: background 1s linear;
+}
+.color-3 {
+    background: #3c4f63;
+    transition: background 1s linear;
+}
 
 
 /* Contact Form */

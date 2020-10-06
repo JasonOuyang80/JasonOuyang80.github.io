@@ -5,25 +5,39 @@ const mobileClose = document.getElementById('mobile-close');
 const jsSlide = document.getElementsByClassName('js-slide');
 const article = document.getElementById('article')
 
-const colorPalette = ['#121212', '#3b3b3b', '#1f2933','#3c4f63'];
+let begin = true;
+const changeColors = (current,distance,value) => {
+   
+    if (distance < 300){
+      
+        article.classList.add(`color-${value}`)
+        current.classList.add('fadein');
+        current.classList.remove('hidden');
+    }
+    else {
+       
+        article.classList.remove(`color-${value}`)
+        current.classList.add('hidden');
+        current.classList.remove('fadein');       
+    }
+}
 
-
-const scrollDownHidden = ()=>{
+const scrollDownHidden = ()=> {
   
-
+  
     for (let i = 0; i < jsSlide.length; i++){
         currentElement=jsSlide[i];
-        if (Math.abs(jsSlide[i].getBoundingClientRect().top)<300){
-            article.style.backgroundColor = colorPalette[i];
-    
-            currentElement.classList.add('fadein');
-            currentElement.classList.remove('hidden');
+        const distance = Math.abs(jsSlide[i].getBoundingClientRect().top);
+      
+        if ((Math.abs(jsSlide[0].getBoundingClientRect().top) > 300) && begin){
+            begin = false;     
         }
-        else {
-          
-            currentElement.classList.add('hidden');
-            currentElement.classList.remove('fadein');
+        if (!begin) {
+           
+            changeColors(currentElement,distance,i);
         }
+
+       
     }   
     
 }
