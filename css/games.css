@@ -1,0 +1,215 @@
+/* Updates to Style.css */
+
+body,#leagueoflegends {
+  
+}
+.leagueoflegends {
+    background: rgba(231, 240, 241, 0.9);
+}
+
+
+#table-of-contents-name {
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+
+#table-of-contents {
+    background: url('../images/background/lol_background_toc.jpg') center center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    min-height: 100vh;
+}
+/* Header */
+.header-game {
+    background: none;
+
+    
+}
+.img-header {
+   position: relative;
+
+}
+.img-header img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+
+.header-heading {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+    bottom: 0;
+    z-index: 1;
+    
+    padding: 3rem;
+  
+
+ 
+}
+
+.header-box {
+    position: absolute;
+    height: 500px;
+    width: 550px;
+    border: 1px solid #f4f8ff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.right {
+    
+}
+.header-box img{
+    height: auto;
+    width: 500px;
+    opacity: 0.5;
+}
+
+.heading-1 {    
+    font-size: 5rem;
+    margin: 0;
+    color: #f4f8ff;
+    font-weight: 100;
+    opacity: 0.9;
+    vertical-align: middle;
+    line-height: 250px;
+    
+}
+
+
+/* Table of Content box */
+.table-of-contents {
+ 
+    padding: 3rem;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+
+    box-shadow: var(--box-shadow);
+
+    font-family: 'Cabin', sans-serif;
+}
+
+
+.toc-block-text {
+    color: #454546;
+    font-size: 3rem;
+    margin: 0;
+
+
+}
+
+
+.toc-block {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toc-block:hover {
+    text-shadow: 2px 4px #9094b6;
+    transition: ease-in 0.2s;
+    font-weight: 900;
+}
+
+
+
+#toc-title {
+
+    font-size: 6rem;
+    margin: 0;
+    color: #212127;
+  
+}
+
+.toc-block:hover {
+  
+}
+/* Container */
+.game-container {
+
+    width: 90vw;
+    margin-left: auto;  
+    margin-right: auto;
+  
+
+}
+
+.game-container-full {
+
+
+
+    margin-bottom: 160px;
+    display: flex;
+}
+
+
+/* Media Query */
+
+@media (max-width:880px) {
+    .table-of-contents {
+        width: 80vw;
+ 
+    }
+
+    .toc-block-text {
+        font-size: 2rem;
+        
+    }
+
+    #table-of-contents {
+        font-size: 4rem;
+    }
+    .img-header img {
+        height: 50vh;
+    }
+    .full-md {
+        width: 100%;
+    }
+    .heading-1 {
+        font-size: 5rem;
+    }
+    .header-heading {
+        padding: 0 0 3rem 6rem;
+    }
+}
+
+@media (max-width:533px) {
+    #table-of-contents-name {
+        font-size: 4rem;
+    }
+    .table-of-contents {
+        padding: 1rem;
+    }
+    .heading-1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .img-header img {
+        height: 40vh;
+    }
+
+
+
+
+}

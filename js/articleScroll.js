@@ -1,9 +1,7 @@
-const mobileNav = document.getElementsByClassName('mobile-button');
+
 const elements = document.querySelectorAll('.hidden');
-const navLinks = document.getElementById('navlinks');
-const mobileClose = document.getElementById('mobile-close');
 const jsSlide = document.getElementsByClassName('js-slide');
-const article = document.getElementById('article')
+const article = document.getElementById('article');
 
 let begin = true;
 const changeColors = (current,distance,value) => {
@@ -42,20 +40,6 @@ const scrollDownHidden = ()=> {
     
 }
 
-const showSideBar = () => {
-    navLinks.classList.remove('navlinks')
-    navLinks.classList.add('sidebar')
-    mobileClose.classList.remove('d-none');
-    mobileNav[0].classList.add('hide');
-}
-
-const hideSideBar = () => {
-    navLinks.classList.add('navlinks')
-    navLinks.classList.remove('sidebar')
-    mobileClose.classList.add('d-none');
-    mobileNav[0].classList.remove('hide');
-    
-}
 
 
 // Event Listeners
@@ -64,6 +48,3 @@ window.addEventListener('scroll',() => {
 
 })
 
-mobileNav[0].addEventListener('click', () =>{
-    showSideBar();
-});
