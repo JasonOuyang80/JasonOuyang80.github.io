@@ -48,48 +48,74 @@ body,#leagueoflegends {
 
 .header-heading {
    position: absolute;
-
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    
-    align-items: flex-end;
     bottom: 0;
     z-index: 1;
-    
-
-  
-
- 
-}
-
-.header-box {
-    height: 800px;
-    width: 800px;
-    background: rgb(3, 3, 3, 0.8);
-    padding: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 0.3;
-    transition: ease-in 0.5s;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
-.header-box:hover,
-.header-box:focus {
+.header-heading-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.corner {
+    width: 0; 
+	height: 0; 
+	border-right: 1000px solid rgba(3, 3, 3, 0.8);
+    border-top: 350px solid transparent;
+    opacity: 0.3;
+    transition: ease-out 0.5s;
+
+}
+
+.header-text {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    right: 3%;
+    bottom: 3%;
+    opacity:  0.3;
+    transition: ease-out 0.5s;
+}
+.header-info {
+    color: white;
+    font-size: 2rem;
+    width: 1200px;
+    height: 700px;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    animation: fadein 1s;
+}
+.corner-bg {
     opacity: 1;
     transition: ease-out 0.5s;
+    border-right: 1000px solid rgba(0, 0, 0, 0.8);
+
+}
+
+
+.header-text:hover,
+.header-text:focus {
+    opacity: 1;
+    transition: ease-out 0.5s;
+    cursor: pointer;
 }
 .header-button {
     background: rgba(17, 17, 17, 0.75);
     border: 0;
     width: 20%;
     padding: 15px;
-    text-align: center;
-    align-self: center;
     color: #f4f8ff;
     border-radius: 10px;
+    align-self: center;
 }
 
 button:hover,
@@ -99,7 +125,7 @@ button:focus {
 }
 
 .display-2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin: 0;
     font-weight: 100;
 }
@@ -128,7 +154,11 @@ button:focus {
     line-height: 250px;
     
 }
-
+/* animation */
+.img-blur {
+    filter: blur(8px);
+    transition: ease-in-out 1.5s;
+}
 
 /* Table of Content box */
 .table-of-contents {
@@ -226,9 +256,7 @@ button:focus {
     .heading-1 {
         font-size: 5rem;
     }
-    .header-heading {
-        padding: 0 0 3rem 6rem;
-    }
+   
 }
 
 @media (max-width:533px) {
