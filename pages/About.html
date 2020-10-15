@@ -7,17 +7,17 @@
     <script src="https://kit.fontawesome.com/888acd4b49.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/About.css">
 
 </head>
 <body id="about">
        <!-- Header includes Brand Title and Navbar -->
-   <header class="header">
+    <header class="header">
         <nav class="navbar">
             <div class="mobile-button">
                 <i class="fas fa-3x fa-bars"></i>
             </div>
-            <a id="logo-title" href="../index.html">Gamerify </a>
+            <a id="logo-title" href="../index.html">GameUP<i class="fas fa-arrow-up"></i></a>
             <ul class="navlinks" id="navlinks">
                 <li><a href="../index.html">Home</a></li>
                 <li><a class="active" href="About.html">About</a></li>
@@ -29,29 +29,34 @@
             </ul>
         </nav>
    </header>
-   <main>
-        <article id="article" class="color-0">
-            <h1 class="hero-section js-slide" id="hero">
-                <span class="span-container span-what"><span class="span-h1 ">What</span></span>
-                <span class="span-container span-is"><span class="span-h1">is</span></span>
-                <span class="span-container span-gamerify">  <span class="span-h1">Gamerify?</span></span>
-            </h1>
-
-            <div class="box-container">
-                <div class="row js-slide"> 
+   <div class="outer-container">
+       <div class="inner-container">
+            <div class="js-slide slide-1">
+                
+                <div class="col-1 title-box">
+                    <span class="h1-title">What is GameUP<i class="fas fa-arrow-up"></i>?</span>
+                </div>
+                <!-- <img class="pos-center img-box" src="../images/background/lol_photo_1.jpg" alt="League of Legends"> -->
+             
+                <!-- <div class="pos-center white-box"> </div> -->
+            </div>
+            <div class="js-slide slide-2">
+                <div class="container-about">
                     <div class="col-both content content-1">
-                        <p>Gamerify is an educational website built purposely for computer gamers who are new to computer   games. This would include information for installing and downloading the game, minimum requirments to run the game, and review on the game that Gamerify recommends.Gamerify will try its best to keep up with the latest computer games. Of course, everything will be 100% free. 
+                        <p>GameUP is an educational website built purposely for computer gamers who are new to computer   games. This would include information for installing and downloading the game, minimum requirments to run the game, and review on the game that GameUP recommends.GameUP will try its best to keep up with the latest computer games. Of course, everything will be 100% free. 
                         </p>
                         <div class="content-icon-container">
-                        <img class="content-icon"src="../images/svg/keyboard.svg" alt="keyboard" width="200" height="120">
-                        <img class="content-icon"src="../images/svg/mouse.svg"  alt="mouse" width="200" height="120">
-                        <img class="content-icon"src="../images/svg/thinking.svg" alt="thinking" width="200" height="120">
-                        <img class="content-icon"src="../images/svg/brainstorm.svg" alt="brainstorm" width="200" height="120">
+                            <img class="content-icon"src="../images/svg/keyboard.svg" alt="keyboard" width="200" height="120">
+                            <img class="content-icon"src="../images/svg/mouse.svg"  alt="mouse" width="200" height="120">
+                            <img class="content-icon"src="../images/svg/thinking.svg" alt="thinking" width="200" height="120">
+                            <img class="content-icon"src="../images/svg/brainstorm.svg" alt="brainstorm" width="200" height="120">
                         </div>
                     </div>
                 </div>
-                
-                <div class="row js-slide content-2 ">
+
+            </div>
+            <div class="js-slide slide-3">
+                <div class="container-about">
                     <div class="col-both content">
                         <h2>Minimum requirements</h2>
                         <ul>    
@@ -62,33 +67,27 @@
                         </ul>
                     </div>
                 </div>
-                
-                <div class="row js-slide content-3">
-                    <div class="col-both content">
-                        <h2>What to Expect?</h2>
-                        <ul>    
-                            <li><p>Step by Step tutorials for downloading and installing</p></li>
-                            <li><p>Step by Step tuotorials for playing to ending the game</p></li>
-                            <li><p>Recommendation if the game would be good for a beginner</p></li>
-                            <li><p>Images,Videos, and Gif Animations will be included for reference</p></li>
-                        </ul>
-                    </div>
-                </div>
-            
             </div>
-        </article>
+            <div class="js-slide slide-4">
+                <div class="container-about">
+                <div class="col-both content">
+                    <h2>What to Expect?</h2>
+                    <ul>    
+                        <li><p>Step by Step tutorials for downloading and installing</p></li>
+                        <li><p>Step by Step tuotorials for playing to ending the game</p></li>
+                        <li><p>Recommendation if the game would be good for a beginner</p></li>
+                        <li><p>Images,Videos, and Gif Animations will be included for reference</p></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+       </div>
+   </div>
 
-   </main>
+ 
 
-
-   <!-- Footer -->
-   <footer  id="footer">
-        <div class="footer-inner">
-            &copy; Jason Ouyang
-        </div>
-    </footer>
-
-<script src="../js/sidebar.js"></script>
 <script src="../js/articleScroll.js"></script>
+<script src="../js/sidebar.js"></script>
+
 </body>
 </html>

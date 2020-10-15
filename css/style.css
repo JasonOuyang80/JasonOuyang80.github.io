@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
 /* Ensures accurate sizing for each container */
 :root {
-    --bg-color: #3b3b3b;
-    --nav-bar-color:#222222;
+    --bg-color: background: linear-gradient(to top, #2B2B2B, #000000);
+    --nav-bar-color:#1b1b1b;
     --white: #f8f8ff;
     --black: #000;
     --text-color:#1b1b1b;
@@ -23,9 +23,10 @@
     --hero-blue-shadow: linear-gradient(-179deg, rgba(14, 8, 8, 0.9) 15%, rgb(58, 57, 57, 0.25) 75%);
     --card-shadow-pitch-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(0, 0, 0, 0.65) 52%);
     --card-shadow-bright: linear-gradient(-179deg, rgba(10, 10, 10, 0.6) 6%, rgba(242, 242, 242, 0.20) 55%);
-    --form-input-bg-color: #222222;
+    --form-input-bg-color: #0c0a0a;
     --info-card-bg-color: #222222;
-    
+    background: #2B2B2B;
+
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -48,14 +49,16 @@ body {
 }
 body#home,
 body#contact {
-    background: var(--bg-color);
+    background: linear-gradient(to bottom, #32373A, #0A0C0F);
+}
+
+body#games {
+   
+   
+    background: linear-gradient(to bottom, #32373A, #0A0C0F);
 }
 
 
-
-body#about {
-    background: #121212;
-}
 /* Icons */
 .fa-bars,
 .fa-times {
@@ -145,7 +148,7 @@ article {
     
     object-fit: cover;
     width: 100%;
-    height: 680px;
+    height: 50vh;
     display: block;
 }
 .hero-display .hero-heading{
@@ -182,8 +185,8 @@ article {
     overflow: hidden;
     position: relative;
     width: 100%;    
-    background: var(--nav-bar-color);
-
+    background: transparent;
+    z-index: 999;
 
 }
 /* Navbar */
@@ -199,19 +202,11 @@ article {
 
 .nav-fixed {
     position: absolute;
-    z-index: 2;
+    z-index: 2; 
     top: 0;
 }
-/* Hero-section */
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: var(--white);
-    width: 100%;    
-}
+
+
 
 
 /* Navlinks */
@@ -333,20 +328,13 @@ article {
     margin: 50px auto;
     width: 90vw;
 }
-.box-container {
- 
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 
 .row {
     display: flex;
     flex-wrap: wrap;
- 
 }
- 
+
 
 .col-left,
 .col-right {
@@ -365,6 +353,7 @@ article {
     justify-content: center;
     white-space: 2px;
 }
+
 
 .content-icon-container {
     display: flex;
@@ -413,7 +402,7 @@ article {
 }
 
 .short {
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .no-space {
@@ -472,14 +461,14 @@ article {
 }
 
 .card {
- 
+
     margin: 10px;
     position: relative;
     background-color: var(--info-card-bg-color);
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
- 
+
 }
 
 /* Shadows */
@@ -514,21 +503,39 @@ article {
     width: 100%;
 }
 .card:hover {
-    box-shadow: 0 0.2rem 0.5rem  rgb(214, 214, 214);
+    
     transform: scale(1.02);
     z-index: 998;
     transition: ease-out 0.2s;
 }
 
 .card:hover div:first-child {
-    display: none;
-
-}
-.card:hover div:not(:first-child) {
     display: flex;
     animation: fadein 1s;
 }
+.card:hover div:not(:first-child) {
+  
+}
 
+/* white-box */
+.white-container {
+    position: absolute;
+    width: 300px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.03;
+
+}
+.right {
+    right: 50%;
+}
+.left {
+    left: 50%;
+}
 
 /* Animations */
 .fadein {
@@ -593,13 +600,14 @@ input[type='submit'] {
     padding: 10px 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--nav-bar-color);
+    background-color: var(--form-input-bg-color);
     font-size: 3rem;
     color: var(--off-white);
-    border: 0;
+    border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
     position: relative;
+
 }
 
 input[type='submit']:hover {
@@ -708,6 +716,7 @@ textarea {
    }
    .card {
        height: 100vh;
+      
    }
   
     
