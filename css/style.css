@@ -148,7 +148,7 @@ article {
     
     object-fit: cover;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: block;
 }
 .hero-display .hero-heading{
@@ -415,24 +415,29 @@ article {
 .card-bg-league {
     background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
     background-size: cover; 
+    border: 3px solid white;
 }
 
 .card-bg-cs_go {
     background: url(../images/background/cs_go.jpg) no-repeat center center; 
     background-size: cover;
+    border: 3px solid white;
 }
 
 .card-bg-osrs {
     background: url(../images/background/osrs.jpg) no-repeat center center; 
     background-size: cover;
+    border: 3px solid white;
 }
 .card-bg-blade_and_soul {
     background: url(../images/background/blade_dancer_02_wide_2880x1800.jpg) no-repeat center;
     background-size: cover;
+    border: 3px solid white;
 }
 .card-bg-dfo {
     background: url(../images/background/dfo.jpg) no-repeat center; 
     background-size: cover;
+    border: 3px solid white;
 }
 
 .card-img {
@@ -461,7 +466,7 @@ article {
 }
 
 .card {
-
+    
     margin: 10px;
     position: relative;
     background-color: var(--info-card-bg-color);

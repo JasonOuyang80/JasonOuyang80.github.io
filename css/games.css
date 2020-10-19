@@ -1,5 +1,11 @@
 /* Updates to Style.css */
 
+h3 {
+    font-size: 3.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
 body,#leagueoflegends {
   
 }
@@ -13,15 +19,15 @@ body,#leagueoflegends {
     font-weight: bold;
     text-align: center;
     letter-spacing: 4px;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #table-of-contents {
     background: url('../images/background/lol_background_toc.jpg') center center;
     background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    min-height: 100vh;
+
+  
 }
 /* Header */
 .header-game {
@@ -93,7 +99,9 @@ body,#leagueoflegends {
     background: rgba(0, 0, 0, 0.5);
     padding: 3rem;
     animation: fadein 1s;
+    flex-direction: column;
 }
+
 .corner-bg {
     opacity: 1;
     transition: ease-out 0.5s;
@@ -155,11 +163,24 @@ button:focus {
     
 }
 /* animation */
+/* Image */
 .img-blur {
     filter: blur(8px);
     transition: ease-in-out 1.5s;
 }
+.img {
+    width: 100%;
+    border: 3px solid white;
+    box-shadow: var(--box-shadow);
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.img-card {
+    padding-left: 20px;
+    padding-right: 20px;
 
+}
 /* Table of Content box */
 .table-of-contents {
  
@@ -201,6 +222,7 @@ button:focus {
 
 
 
+
 #toc-title {
 
     font-size: 6rem;
@@ -212,14 +234,49 @@ button:focus {
 .toc-block:hover {
   
 }
+/* sections */
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #Prerequisites {
+        min-height: 100vh;
+    }
+    .text-box{
+        border: 4px solid white;
+        width: 500px;
+        padding: 20px;
+        margin-left: 5%;
+        margin-bottom: 3rem;
+    }
+    .text-box h1 {
+        font-size: 6rem;
+        margin: 0;
+    
+    }
+
+/*Content */
+.one-fourth {
+    width: 24.999%;
+}
+
+.chalk {
+    border: 5px solid #f4f8ff;
+    height: 500px;
+    flex-direction: column;
+    color: white;
+}
+iframe {
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 3rem;
+}
 /* Container */
 .game-container {
 
     width: 90vw;
     margin-left: auto;  
     margin-right: auto;
-  
-
 }
 
 .game-container-full {
