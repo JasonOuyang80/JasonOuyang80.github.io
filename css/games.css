@@ -5,7 +5,9 @@ h3 {
     margin: 0;
     margin-bottom: 2rem;
 }
-
+.t-1 {
+    font-size: 8rem;
+}
 body,#leagueoflegends {
   
 }
@@ -28,6 +30,24 @@ body,#leagueoflegends {
     background-size: cover;
 
   
+}
+/* Shadow */
+.hero-shadow {
+    background: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(18, 18, 18, 0.95) 90%);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.hero-heading {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    padding-left: 5rem;
+}
+
+.display-1 {
+    font-size: 8rem;
 }
 /* Header */
 .header-game {
@@ -220,8 +240,28 @@ button:focus {
     font-weight: 900;
 }
 
-
-
+#table{ 
+    display: table; 
+}
+.tr{ 
+    display: table-row; 
+}
+.td{ 
+    display: table-cell; }
+.one-fifth {
+    width: 20%;
+}
+.text-1 {
+    font-size: 3rem;
+    color: white;
+}
+.two-fifth {
+    width: 40%;
+}
+.content-card {
+    display: flex;
+    align-items: center;
+}
 
 #toc-title {
 
@@ -240,6 +280,9 @@ button:focus {
         padding-bottom: 50px;
     }
     #Prerequisites {
+        min-height: 100vh;
+    }
+    .section {
         min-height: 100vh;
     }
     .text-box{

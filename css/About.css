@@ -1,7 +1,8 @@
 
 
 body#about {
- overflow-y: hidden;
+    overflow-y: hidden;
+
 }
 /* Text */
 .h1-title {
@@ -40,8 +41,8 @@ body#about {
     width: 400vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background-image: linear-gradient(to right bottom, #0e0e0f, #181717, #1f1e1e, #272625, #2e2e2d);
-
+    /* background-image: linear-gradient(to right bottom, #0e0e0f, #181717, #1f1e1e, #272625, #2e2e2d); */
+    background: linear-gradient(to bottom, #32373A, #0A0C0F);
 
 }
 

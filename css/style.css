@@ -306,7 +306,10 @@ article {
     transition: ease-in-out 0.2s;
   
 }
-
+a {
+    text-decoration: none;
+  
+}
 .mobile-button {
     display: none;
 }
@@ -325,7 +328,7 @@ article {
     z-index: 999;
     top: 0;
     left: 0;
-    background: var(--nav-bar-color);
+    background: linear-gradient(to bottom, #32373A, #0A0C0F);
     transition: all 0.5s;
     box-shadow: 1px 2px 2px 3px rgba(0,0,0,1);
     display: flex;
@@ -475,7 +478,11 @@ article {
 }
 
 /* Card in Container */
-
+.card-bg-steam {
+    background: url(../images/background/steam.jpg) no-repeat center; 
+    background-size: cover;
+    border: 3px solid white;
+}
 
 .card-bg-league {
     background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
@@ -532,8 +539,15 @@ article {
   
 
 }
-
-
+.title-1 {
+    font-size: 7rem;
+    color: rgb(15, 12, 12);
+    font-weight: bold;
+    
+}
+.card-text-1 {
+    text-decoration: none;
+}
 .card-text {
     padding: 20px;
     position: absolute;
