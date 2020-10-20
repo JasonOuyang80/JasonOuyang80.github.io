@@ -1,0 +1,7 @@
+/* Just disable footer on mobile */
+
+@media (max-width: 1040px) {
+  .contact-form-container {
+      min-height: 100vh;
+  }
+}

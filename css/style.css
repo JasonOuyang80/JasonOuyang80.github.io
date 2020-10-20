@@ -541,9 +541,17 @@ a {
 }
 .title-1 {
     font-size: 7rem;
-    color: rgb(15, 12, 12);
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    
+    text-shadow: 
+    0 0 5px #dbdbdb,
+    0 0 10px #dbdbdb,
+    0 0 20px #dbdbdb,
+    0 0 40px #dbdbdb,
+    0 0 80px #dbdbdb,
+    0 0 90px #dbdbdb,
+    0 0 100px #dbdbdb,
+    0 0 150px #dbdbdb;
 }
 .card-text-1 {
     text-decoration: none;
@@ -728,6 +736,15 @@ a {
     }
 }
 
+.blink {
+    animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
 .hidden {
  
