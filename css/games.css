@@ -31,6 +31,26 @@ body,#leagueoflegends {
 
   
 }
+#steam {
+    padding: 100px 0;
+}
+/* Images */
+.step-image {
+    border: 2px solid white;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.step-image-wide {
+    border: 2px solid white;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
 /* Shadow */
 .hero-shadow {
     background: linear-gradient(-179deg, rgba(30, 40, 50, 0) 6%, rgba(18, 18, 18, 0.95) 90%);
@@ -174,13 +194,16 @@ button:focus {
 
 .heading-1 {    
     font-size: 5rem;
-    margin: 0;
     color: #f4f8ff;
     font-weight: 100;
     opacity: 0.9;
     vertical-align: middle;
-    line-height: 250px;
-    
+    text-shadow: 5px 5px #000;
+
+}
+.heading-2 {
+    margin-bottom: 6rem;
+    text-shadow: 5px 5px #000;
 }
 /* animation */
 /* Image */
@@ -261,7 +284,10 @@ button:focus {
 .content-card {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+
 
 #toc-title {
 
@@ -297,7 +323,21 @@ button:focus {
         margin: 0;
     
     }
+    #divider {
+        margin: 5rem 0;
+        border: none;
+        height: 3px;
+        color: white;
+        background: white;
+    }
 
+    .half {
+        width: 50%;
+    }
+/* Links */
+a {
+    color: rgb(52, 84, 134);
+}
 /*Content */
 .one-fourth {
     width: 24.999%;

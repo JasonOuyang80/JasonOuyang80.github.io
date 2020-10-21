@@ -127,6 +127,7 @@ h1 {
     width: 0%;
     background: white;
     margin: 0 auto;
+  
 }
 
 
@@ -136,7 +137,7 @@ h1 {
     color: var(--off-white);
     margin: 0;
     margin-bottom: 2rem;
-    text-shadow: 10px 10px rgba(0,0,0,1);
+    text-shadow: 2px 5px rgba(0,0,0,1);
 
 }
 .heading-3 {
@@ -270,7 +271,7 @@ article {
     background-color: white;
     width: 100%;
     bottom: -7px;
-    
+    box-shadow: 5px 5px 5px black;
 }
 .navlinks li a {
     margin: 0 3rem;
@@ -298,6 +299,7 @@ article {
 .navlinks li a:hover::before {
     opacity: 1;
     width: 100%;
+    box-shadow: 5px 5px 5px black;
 }
 
 #navlinks li a:hover {
@@ -373,7 +375,7 @@ a {
 
 .container-full {
     margin: 50px auto;
-    width: 90vw;
+    width: 70vw;
 }
 .container-home {
     margin-top: 150px;
@@ -462,6 +464,10 @@ a {
 .one-half {
     width: 49.9999%;
 }
+
+.card-section {
+    width: 40%
+}
 .one-fourth {
     width: 24.999%;
 }
@@ -536,9 +542,12 @@ a {
 
 .card-body {
     display: none;
-  
-
 }
+div.heading-2 {
+    display: none;
+}
+
+
 .title-1 {
     font-size: 7rem;
     color: rgb(0, 0, 0);
@@ -567,10 +576,9 @@ a {
 .card-text li {
     margin-bottom: 2rem;
 }
-.card-1:hover .card-body {
+.d-block {
     display: block;
-    transition: ease-in 1s;
-
+    height: 100%;
 }
 .card-shadow {
     z-index: 1;
@@ -624,7 +632,8 @@ a {
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
-    margin-bottom: 85px
+    margin-bottom: 85px;
+    cursor: pointer;
 }
 .card-1 img {
     max-width: 100%;

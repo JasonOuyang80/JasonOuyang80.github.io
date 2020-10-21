@@ -4,6 +4,8 @@ body#about {
     overflow-y: hidden;
 
 }
+
+  
 /* Text */
 .h1-title {
     font-size: 8rem;
@@ -15,6 +17,11 @@ body#about {
    
     text-shadow: 5px 5px rgb(12, 12, 12);
     transition: ease-in 2s;
+}
+
+#intro-body {
+    font-size: 2rem;
+    line-height: 60px;
 }
 .header {
    background: transparent;
@@ -58,10 +65,12 @@ body#about {
 
 .scroll-right {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-shadow: 4px 4px #000;
+    height: 100%;
+    width: 100%;
 
 }
 .slide-1 {
@@ -119,10 +128,17 @@ slide-4 {
     opacity: 0.6;
     
 }
+.bg-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.05;
+}
 
 .content p,
 .content ul {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -156,9 +172,7 @@ slide-4 {
     .container-about {
         width: 90vw;
     }
-    .content p{
-        font-size: 2.2rem;
-    }
+
     h2 {
         font-size: 3rem;
     }
@@ -169,8 +183,5 @@ slide-4 {
     }
     .container-about {
         width: 100vw;
-    }
-    .content p{
-       font-size: 2rem;
     }
 }

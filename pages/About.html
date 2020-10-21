@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/rain.css">
 
 </head>
+
 <body id="about">
        <!-- Header includes Brand Title and Navbar -->
     <header class="header">
@@ -17,7 +19,7 @@
             <div class="mobile-button">
                 <i class="fas fa-3x fa-bars"></i>
             </div>
-            <a id="logo-title" href="../index.html">GameUP<i class="fas fa-arrow-up"></i></a>
+            <a id="logo-title" href="../index.html">GameUP<i class="fas fa-umbrella"></i></a>
             <ul class="navlinks" id="navlinks">
                 <li><a href="../index.html">Home</a></li>
                 <li><a class="active" href="About.html">About</a></li>
@@ -33,13 +35,13 @@
     <h1 class="blink"><i class="fas fa-arrow-left"></i>  Keep Scrolling  <i class="fas fa-arrow-right"></i></h1>
     </div>
    <div class="outer-container">
-   
+       
        <div id="inner-container" class="inner-container">
       
             <div class="js-slide slide-1">
-                
+                <div class="main"></div>
                 <div class="col-1 title-box">
-                    <span class="h1-title">What is GameUP<i class="fas fa-arrow-up"></i>?</span>
+                    <span class="h1-title">What is GameUP<i class="fas fa-umbrella"></i>?</span>
                 </div>
                 <!-- <img class="pos-center img-box" src="../images/background/lol_photo_1.jpg" alt="League of Legends"> -->
              
@@ -48,24 +50,23 @@
 
           
             <div class="js-slide slide-2">
+                <div class="main"></div>
                 <div class="container-about">
                     <div class="col-both content content-1">
-                        <p>GameUP is an educational website built purposely for computer gamers who are new to computer   games. This would include information for installing and downloading the game, minimum requirments to run the game, and review on the game that GameUP recommends.GameUP will try its best to keep up with the latest computer games. Of course, everything will be 100% free. 
+                        <p id="intro-body">GameUP is an educational website built purposely for computer gamers who are new to computer games. This would include information for installing and downloading the game, minimum requirements to run the game, and review on the game that GameUP recommends.GameUP will try its best to keep up with the latest computer games. Of course, everything will be 100% free. 
                         </p>
-                        <div class="content-icon-container">
-                            <img class="content-icon"src="../images/svg/keyboard.svg" alt="keyboard" width="200" height="120">
-                            <img class="content-icon"src="../images/svg/mouse.svg"  alt="mouse" width="200" height="120">
-                            <img class="content-icon"src="../images/svg/thinking.svg" alt="thinking" width="200" height="120">
-                            <img class="content-icon"src="../images/svg/brainstorm.svg" alt="brainstorm" width="200" height="120">
-                        </div>
+                       
                     </div>
                 </div>
 
             </div>
             <div class="js-slide slide-3">
+                <div class="main"></div>
+                <img class="bg-image" src="../images/icons/dugeon_fighter_image.png" alt="league of legends">
                 <div class="container-about">
                     <div class="col-both content">
-                        <h2>Minimum requirements</h2>
+
+                        <h2 class="heading-2">Minimum requirements</h2>
                         <ul>    
                             <li><p>More than 10gb of memory available in Hardrive to install the game</p></li>
                             <li><p>A working graphics/video card installed on computer (Gaming Computer Recommended)</p></li>
@@ -76,25 +77,33 @@
                 </div>
             </div>
             <div class="js-slide slide-4">
+                <div class="main"></div>
+                <img class="bg-image" src="../images/icons/gnar.png" alt="league of legends">
                 <div class="container-about">
-                <div class="col-both content">
-                    <h2>What to Expect?</h2>
-                    <ul>    
-                        <li><p>Step by Step tutorials for downloading and installing</p></li>
-                        <li><p>Step by Step tuotorials for playing to ending the game</p></li>
-                        <li><p>Recommendation if the game would be good for a beginner</p></li>
-                        <li><p>Images,Videos, and Gif Animations will be included for reference</p></li>
-                    </ul>
-                </div>
+                    <div class="row">
+                        <div class="two-third content">
+                            <h2 class="heading-2">What to Expect?</h2>
+                            <ul>    
+                                <li><p>Step by Step tutorials for downloading and installing</p></li>
+                                <li><p>Step by Step tuotorials for playing to ending the game</p></li>
+                                <li><p>Recommendation if the game would be good for a beginner</p></li>
+                                <li><p>Images,Videos, and Gif Animations will be included for reference</p></li>
+                            </ul>
+                        </div>
+                     
+                           
+                    
+                    </div>
                 </div>
             </div>
        </div>
    </div>
 
  
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="../js/articleScroll.js"></script>
 <script src="../js/sidebar.js"></script>
+
 
 </body>
 </html>
