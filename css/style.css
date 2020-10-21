@@ -52,10 +52,18 @@ body#contact {
     background: linear-gradient(to bottom, #32373A, #0A0C0F);
 }
 
+body#Games {
+  
+
+
+}
 
 #games {
     padding: 50px 0;
-    background: linear-gradient(to bottom, #374249, #02060e);
+    background: radial-gradient(circle, rgba(33, 34, 34, 0.888) 0%, rgba(4, 9, 26, 0.872) 90%);
+
+
+
 }
 
 
@@ -376,6 +384,8 @@ a {
 .container-full {
     margin: 0 auto;
     width: 70vw;
+ 
+
 }
 .container-home {
     margin-top: 150px;
@@ -472,11 +482,11 @@ a {
     width: 24.999%;
 }
 .tall {
-    min-height: 600px;
+    min-height: 520px;
 }
 
 .short {
-    height: 300px;
+    height: 250px;
 }
 
 .no-space {
@@ -487,45 +497,54 @@ a {
 .card-bg-steam {
     background: url(../images/background/steam.jpg) no-repeat center; 
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
 }
 
 .card-bg-league {
     background: url(../images/background/league_of_legends.jpg) no-repeat center center; 
     background-size: cover; 
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
 }
 
 .card-bg-cs_go {
     background: url(../images/background/cs_go.jpg) no-repeat center center; 
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
 }
 
 .card-bg-osrs {
     background: url(../images/background/osrs.jpg) no-repeat center center; 
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
+    
 }
 .card-bg-blade_and_soul {
     background: url(../images/background/blade_dancer_02_wide_2880x1800.jpg) no-repeat center;
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
 }
 .card-bg-dfo {
     background: url(../images/background/dfo.jpg) no-repeat center; 
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgba(255,255,255,0.70)
+    
 }
 .card-bg-genshin {
     background: url(../images/background/genshin.jpg) no-repeat center; 
     background-size: cover;
-    border: 3px solid white;
+    border: 3px solid rgb(4255,255,25520.70)
+    
 }
 
 .card-bg-win-10 {
     background: url(../images/background/windows_10.jpg) no-repeat center; 
     background-size: cover;
+
 }
 .card-bg-mac {
     background: url(../images/background/mac.jpg) no-repeat center; 
@@ -592,7 +611,7 @@ div.heading-2 {
 }
 
 .card-img {
-  width: 80%;
+  width: 90%;
   height: auto;
 }
 
@@ -600,7 +619,10 @@ div.heading-2 {
     width: 55%;
     height: auto;
 }
-
+.card-img-wide {
+    height: auto;
+    width: 30%;
+}
 .card-logo {
 
   display: none;
@@ -641,6 +663,10 @@ div.heading-2 {
     flex-direction: column;
     margin-bottom: 85px;
     cursor: pointer;
+}
+
+.h-100 {
+    height: 100%;
 }
 .card-1 img {
     max-width: 100%;
@@ -690,9 +716,9 @@ div.heading-2 {
 }
 .card:hover {
     
-    transform: scale(1.02);
+    transform: scale(1.2);
     z-index: 998;
-    transition: ease-out 0.2s;
+    transition: ease-out 0.3s;
 }
 
 .card:hover div:first-child {

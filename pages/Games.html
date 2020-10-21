@@ -7,90 +7,91 @@
     <script src="https://kit.fontawesome.com/888acd4b49.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="../css/style.css" >
 </head>
-<body>
-    <!-- Header includes Brand Title and Navbar -->
+<body id="Games">
+
     <header class="header">
         <nav class="nav-fixed navbar">
                 <div class="mobile-button">
-                    <i class="fas fa-3x fa-bars"></i>
+                    <i class="fas fa-3x fa-bars" aria-hidden="true"></i>
                 </div>
-                <a id="logo-title" href="../index.html">GameUP<i class="fas fa-umbrella"></i></a>
+                <a id="logo-title" href="../index.html">GameUP<i class="fas fa-umbrella" aria-hidden="true"></i></a>
                 <ul class="navlinks" id="navlinks">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a class="active" href="pages/Games.html">Tutorials</a></li>
                     <li><a href="Contact.html">Contact</a></li>
-                    <li class="mobile-close d-none" id="mobile-close" onClick=hideSideBar()>
-                        <i class="fas fa-times mobile-close"></i>
+                    <li class="mobile-close d-none" id="mobile-close" onclick="hideSideBar()">
+                        <i class="fas fa-times mobile-close" aria-hidden="true"></i>
                     </li>
                 </ul>
         </nav>
         <div class="hero-display">
             <div class="hero-body">
-                <img style="opacity:0.5;" alt="night gaming" src="../images/background/gaming_background.jpg">
+                <img style="opacity:0.75; filter: blur(3px);" alt="night gaming" src="../images/background/gaming_background.jpg">
                 <div class="hero-heading">
-                    <h1 class="display-1">Game Reviews</h1>
+                    <h1 class="display-1">Tutorials</h1>
                 </div>
-          
             </div>
         </div>
     </header>
 <main id=games>
-
+    <h1 class="heading-1">Checkout my tutorials!</h1>
     <div  class="container-full fadein">
       
         <div class="row">
+       
+            <div class="content-card two-third">
+                  <a class="card short card-bg-cs_go">
+                    <div class="card-logo card-shadow-bright">
+                        <img width=200 height=150 class="card-img-wide" src="../images/icons/cs_go_logo.png">
+                    </div>
+                </a>
+                <div class="row">
+                    <div class="content-card one-third">
+                        <a class="card short card-bg-osrs">
+                          
+                            <div class="card-logo card-shadow-bright">
+                                <img width=400 height=150 class="card-img" src="../images/icons/Old_School_RuneScape_logo.png">
+                            </div>
+                        </a>
+                    </div>  
+                    <div class="content-card one-third">
+                        <div class="card short card-bg-blade_and_soul">
+                          
+                            <div class="card-logo card-shadow-bright">
+                                <img width=400 height=150 class="card-img" src="../images/icons/blade_and_soul_logo.png">
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="content-card one-third">
+                        <div class="card short card-bg-dfo">
+                    
+                            <div class="card-logo card-shadow-bright">
+                                <img width=400 height=150 class="card-img" src="../images/icons/dfo_logo.png">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
             <div class="content-card one-third">
-                <a href="games/Leagueoflegends.html" class="card short card-bg-league">
-                  
+                <a href="games/Leagueoflegends.html" class="card tall card-bg-league">
                     <div class="card-logo card-shadow-bright">
                         <img width=400 height=150 class="card-img" src="../images/icons/league_of_legends_logo.png">
                     </div>
                 </a>
-            </div>
-            <div class="content-card one-third">
-                <a class="card short card-bg-cs_go">
-                   
-                    
-                    <div class="card-logo card-shadow-bright">
-                        <img width=400 height=150 class="card-img-large" src="../images/icons/cs_go_logo.png">
-                    </div>
-                </a>
-            </div>
-            <div class="content-card one-third">
-                <a class="card short card-bg-osrs">
-                  
-                    <div class="card-logo card-shadow-bright">
-                        <img width=400 height=150 class="card-img-large" src="../images/icons/Old_School_RuneScape_logo.png">
-                    </div>
-                </a>
-            </div>  
-            <div class="content-card one-third">
-                <div class="card short card-bg-blade_and_soul">
-                  
-                    <div class="card-logo card-shadow-bright">
-                        <img width=400 height=150 class="card-img" src="../images/icons/blade_and_soul_logo.png">
-                    </div>
-                </div>
-            </div>  
-            <div class="content-card one-third">
-                <div class="card short card-bg-dfo">
-            
-                    <div class="card-logo card-shadow-bright">
-                        <img width=400 height=150 class="card-img" src="../images/icons/dfo_logo.png">
-                    </div>
-                </div>
             </div> 
+           
+          
+           
             <div class="content-card one-third">
                 <div class="card short card-bg-genshin">
-            
                     <div class="card-logo card-shadow-bright">
                         <img width=400 height=150 class="card-img" src="../images/icons/genshin_logo.png">
                     </div>
                 </div>
             </div>  
            
-            <div class="content-card full">
+            <div class="content-card two-third">
                 <a href="games/steam.html" class="card short card-bg-steam">
                   
                     <div class="card-logo title-1 ">

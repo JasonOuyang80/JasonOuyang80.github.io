@@ -38,8 +38,8 @@ body,#leagueoflegends {
 .step-image {
     border: 2px solid white;
     height: 400px;
-    width: 400px;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 }
 .step-image-wide {
     border: 2px solid white;
@@ -157,7 +157,7 @@ body,#leagueoflegends {
     cursor: pointer;
 }
 .header-button {
-    background: rgba(17, 17, 17, 0.75);
+    background: rgb(54, 54, 54);
     border: 0;
     width: 20%;
     padding: 15px;
@@ -181,15 +181,6 @@ button:focus {
 
 .right {
   top: 1px;
-}
-.head-image{
-    height: auto;
-    width: 250px;
-    opacity: 0.5;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    padding: 0 0 30px 30px; 
 }
 
 .heading-1 {    
@@ -224,6 +215,19 @@ button:focus {
     padding-right: 20px;
 
 }
+.head-image{
+    height: auto;
+    width: 250px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 0 0 30px 30px; 
+}
+.img-header img.img-small {
+    height: 60vh;
+}
+
 /* Table of Content box */
 .table-of-contents {
  
@@ -284,9 +288,12 @@ button:focus {
 .content-card {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 20px;
 }
+.center-card {
+    justify-content: center;
+}
+
 
 
 #toc-title {
