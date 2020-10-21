@@ -7,10 +7,11 @@
     <script src="https://kit.fontawesome.com/888acd4b49.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="../css/contact.css" >
     <link type="text/css" rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/youtube.css">
 </head>
 <body id="contact">
     <!-- Header includes Brand Title and Navbar -->
-<header class="header">
+<header style="position: relative;" class="header">
     <nav class="navbar">
         <div class="mobile-button">
             <i class="fas fa-3x fa-bars"></i>
@@ -19,7 +20,7 @@
         <ul class="navlinks" id="navlinks">
             <li><a href="../index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="../pages/Games.html">Games</a></li>
+            <li><a href="../pages/Games.html">Tutorials</a></li>
             <li><a class="active" href="#">Contact</a></li>
             <li class="mobile-close d-none" id="mobile-close" onClick=hideSideBar()>
                 <i class="fas fa-times mobile-close"></i>
@@ -27,8 +28,8 @@
         </ul>
     </nav>
 </header>
-
-    <div class="contact-form-container fadein">
+    <div id="video"></div>
+    <div style="position: relative;" class="contact-form-container fadein">
         <h1 class="text-center">Contact Me</h1>
 
         <form class="contact-form" method="POST" autocomplete="off">  
@@ -42,7 +43,7 @@
             </div>
             <div class="form-box">
                 <label for="text-area">Comments: </label>
-                <textarea  resize=none rows="4" cols="50" name="text-area" id="text-area" required></textarea>
+                <textarea  resize=none rows="5" cols="50" name="text-area" id="text-area" required></textarea>
             </div>
             <div class="form-box">
                 <input type="submit" value="Submit Now!">
@@ -59,7 +60,8 @@
         &copy; Jason Ouyang
     </div>
 </footer>
-
 <script src="/js/sidebar.js" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery.youtubebackground.js"></script>
 </body>
 </html>

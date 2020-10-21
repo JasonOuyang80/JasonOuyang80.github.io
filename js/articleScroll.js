@@ -68,7 +68,7 @@ window.addEventListener('wheel',() => {
 
 
 
-//  
+//  rain effect
 function show() 
 {
    $('.main').empty();

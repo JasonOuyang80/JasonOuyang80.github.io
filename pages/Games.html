@@ -7,31 +7,37 @@
     <script src="https://kit.fontawesome.com/888acd4b49.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="../css/style.css" >
 </head>
-<body  id="games">
+<body>
     <!-- Header includes Brand Title and Navbar -->
-<header class="header">
-    <nav class="nav navbar">
-            <div class="mobile-button">
-                <i class="fas fa-3x fa-bars"></i>
+    <header class="header">
+        <nav class="nav-fixed navbar">
+                <div class="mobile-button">
+                    <i class="fas fa-3x fa-bars"></i>
+                </div>
+                <a id="logo-title" href="../index.html">GameUP<i class="fas fa-umbrella"></i></a>
+                <ul class="navlinks" id="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a class="active" href="pages/Games.html">Tutorials</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="mobile-close d-none" id="mobile-close" onClick=hideSideBar()>
+                        <i class="fas fa-times mobile-close"></i>
+                    </li>
+                </ul>
+        </nav>
+        <div class="hero-display">
+            <div class="hero-body">
+                <img style="opacity:0.5;" alt="night gaming" src="../images/background/gaming_background.jpg">
+                <div class="hero-heading">
+                    <h1 class="display-1">Game Reviews</h1>
+                </div>
+          
             </div>
-            <a id="logo-title" href="../index.html">GameUP<i class="fas fa-umbrella"></i></a>
-            <ul class="navlinks" id="navlinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a class="active" href="Games.html">Games</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li class="mobile-close d-none" id="mobile-close" onClick=hideSideBar()>
-                    <i class="fas fa-times mobile-close"></i>
-                </li>
-            </ul>
-    </nav>
+        </div>
+    </header>
+<main id=games>
 
-   
-    </div>
-</header>
-<main>
-
-    <div class="container-full  fadein">
+    <div  class="container-full fadein">
       
         <div class="row">
             <div class="content-card one-third">
@@ -87,8 +93,8 @@
             <div class="content-card full">
                 <a href="games/steam.html" class="card short card-bg-steam">
                   
-                    <div class="card-logo title-1 card-shadow-bright">
-                        Learn to Install Steam
+                    <div class="card-logo title-1 ">
+                        Learn Steam
                     </div>
                 </a>
             </div>

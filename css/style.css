@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
 /* Ensures accurate sizing for each container */
 :root {
-    --bg-color: background: linear-gradient(to top, #2B2B2B, #000000);
-    --nav-bar-color:#1b1b1b;
+    --bg-color:  rgba(0, 0, 0, 0.5);
+    --nav-bar-color: rgba(0, 0, 0, 0.5);
     --white: #f8f8ff;
     --black: #000;
     --text-color:#1b1b1b;
@@ -23,7 +23,7 @@
     --hero-blue-shadow: linear-gradient(-179deg, rgba(14, 8, 8, 0.9) 15%, rgb(58, 57, 57, 0.25) 75%);
     --card-shadow-pitch-dark: linear-gradient(-179deg, rgba(23, 23, 23, 0) 6%, rgba(0, 0, 0, 0.65) 52%);
     --card-shadow-bright: linear-gradient(-179deg, rgba(10, 10, 10, 0.6) 6%, rgba(242, 242, 242, 0.20) 55%);
-    --form-input-bg-color: #0c0a0a;
+    --form-input-bg-color: #0C0A2A;
     --info-card-bg-color: #222222;
     background: #2B2B2B;
 
@@ -52,10 +52,10 @@ body#contact {
     background: linear-gradient(to bottom, #32373A, #0A0C0F);
 }
 
-body#games {
-   
-   
-    background: linear-gradient(to bottom, #374249, #1e3353);
+
+#games {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #374249, #02060e);
 }
 
 
@@ -86,7 +86,7 @@ p {
     margin-bottom: 3rem;
 }
 .article-text {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--off-white);
     margin-left: 5rem;
     line-height: 40px;
@@ -374,7 +374,7 @@ a {
 }
 
 .container-full {
-    margin: 50px auto;
+    margin: 0 auto;
     width: 70vw;
 }
 .container-home {
@@ -476,7 +476,7 @@ a {
 }
 
 .short {
-    min-height: 400px;
+    height: 300px;
 }
 
 .no-space {
@@ -626,6 +626,13 @@ div.heading-2 {
     flex-direction: column;
 
 }
+.card-hover {
+    display: none;
+}
+.card-1:hover .card-hover {
+    display: block;
+}
+
 .card-1 {
     margin: 10px;
     position: relative;
@@ -766,10 +773,10 @@ div.heading-2 {
 .contact-form-container {
     
     font-family: 'Space Mono', monospace,sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 100px auto;
     color:var(--off-white);
-    width: 800px;
+    width: 500px;
  
 }
 input[type='submit'] {
@@ -777,7 +784,7 @@ input[type='submit'] {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--form-input-bg-color);
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--off-white);
     border: 2px solid white;
     border-radius: 20px;
@@ -798,7 +805,7 @@ input:valid {
 }
 
 .form-box label {
-    min-width: 200px;
+    margin-bottom: 1rem;
 }
 textarea {
     resize: none;
@@ -808,16 +815,17 @@ textarea {
 .contact-form input[type="email"],
 .contact-form textarea {
     background: var(--form-input-bg-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--off-white);
     border: 1px solid var(--off-white);
     min-width: 400px;
     border-radius: 20px;
-    padding: 1.5rem;
-    
+    padding: 1rem;
 }
+
 .form-box {
     display: flex;
+    flex-direction: column;
     margin-bottom: 4rem;
 }
 
@@ -850,6 +858,11 @@ textarea {
     justify-content: center;
     align-items: center;
 
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
 }
 .footer-inner {
     color: var(--white);
@@ -891,10 +904,10 @@ textarea {
        font-size: 4.5rem;
    }
    .card {
-       height: 100vh;
+       height: 50vh;
       
    }
-  
+   
     
     .container {
         flex-direction: column;
@@ -906,6 +919,7 @@ textarea {
 
     .content-card {
         width: 100%;
+        
     }
     .border-right-black {
         border: none;
