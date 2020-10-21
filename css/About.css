@@ -132,9 +132,11 @@ slide-4 {
     height: 100%;
     width: 100%;
     position: absolute;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0.05;
 }
+
+
 
 .content p,
 .content ul {
