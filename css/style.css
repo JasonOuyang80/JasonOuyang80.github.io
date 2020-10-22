@@ -53,17 +53,28 @@ body#contact {
 }
 
 body#Games {
-  
+    background: rgb(41, 40, 40);
+
 
 
 }
 
 #games {
     padding: 50px 0;
-    background: radial-gradient(circle, rgba(33, 34, 34, 0.888) 0%, rgba(4, 9, 26, 0.872) 90%);
 
 
 
+}
+.background-image {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.8;
 }
 
 
@@ -677,6 +688,7 @@ div.heading-2 {
 }
 .no-shadow {
     box-shadow: none;
+    text-shadow: none;
 }
 
 .white-bg {
