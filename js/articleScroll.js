@@ -8,7 +8,7 @@ const jsSlideArray = Array.prototype.slice.call(jsSlide)
 
 const changeColors = (current,distance,value) => {
    
-    if (distance < 400){
+    if (distance < 350){
         
         innerContainer.classList.add(`color-${value}`)
         current.classList.remove('hidden');
@@ -30,8 +30,8 @@ const scrollDownHidden = ()=> {
     for (let i = 0; i < jsSlide.length; i++){
         currentElement=jsSlide[i];
         const distance = Math.abs(currentElement.getBoundingClientRect().x);
-        
-        if ((Math.abs(jsSlide[0].getBoundingClientRect().x) > 400) && begin){
+        console.log(distance)
+        if ((Math.abs(jsSlide[0].getBoundingClientRect().x) > 350) && begin){
             begin = false;     
         }
         if (!begin) {
